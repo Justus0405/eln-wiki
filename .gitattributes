@@ -1,0 +1,5 @@
+docs/.vitepress/** linguist-documentation=false
+docs/.vitepress/**/*.ts linguist-language=TypeScript
+docs/.vitepress/**/*.tsx linguist-language=TypeScript
+docs/.vitepress/**/*.mts linguist-language=TypeScript
+docs/.vitepress/**/*.cts linguist-language=TypeScript
