@@ -20,7 +20,6 @@ features:
     details: Unlike packet-based systems in other mods, Electrical Age uses continuous electricity flow based on voltage and amperage, enabling more realistic and complex simulations.
   - title: Advanced Automation
     details: Includes smart components like sensors, relays, and logic gates for building fully automated, responsive systems.
-
 ---
 
 <br>

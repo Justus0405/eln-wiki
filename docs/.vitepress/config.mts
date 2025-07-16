@@ -16,6 +16,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Getting started', link: '/1-getting-started/cables.md' },
+      { text: 'Team', link: '/team.md' },
       {
         text: "Download",
         items: [
@@ -33,7 +34,7 @@ export default defineConfig({
           { text: 'Cables', link: '/1-getting-started/cables.md' },
           { text: 'Transformers', link: '/1-getting-started/transformers.md' }
         ]
-      }
+      },
     ],
 
     socialLinks: [
