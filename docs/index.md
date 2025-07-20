@@ -22,4 +22,5 @@ features:
     details: Includes smart components like sensors, relays, and logic gates for building fully automated, responsive systems.
 ---
 
-![Wiki Banner](/main/wiki-banner.png)
+<br>
+<img src="/main/wiki-banner.png" class="rounded" />

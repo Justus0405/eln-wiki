@@ -1,8 +1,3 @@
-<script setup>
-import { usePixelatedImages } from '../.vitepress/theme/usePixelatedImages'
-usePixelatedImages()
-</script>
-
 # Cables
 
 > [!TIP]
@@ -13,14 +8,14 @@ ELN comes with different voltage tiers which are also color coded
 
 | Tier          | Voltage       | Ampere        | Power         | Serial Resistance | Image         |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Low Voltage | 50V | 20A | 1kW | 25mΩ | ![Low Voltage Cable](/cables/lowvoltagecable.png) |
-| Medium Voltage | 200V | 10A | 2kW | 100mΩ | ![Medium Voltage Cable](/cables/mediumvoltagecable.png) |
-| High Voltage | 800V | 6.25A | 5kW | 200mΩ | ![High Voltage Cable](/cables/highvoltagecable.png) |
-| Extreme Voltage | 3200V | 4.69A | 15kW | 133mΩ | ![Very High Voltage Cable](/cables/veryhighvoltagecable.png) |
-| Low Current | 120kV | 5A | 600kW | 20mΩ | ![Low Current Cable](/cables/lowcurrentcable.png) |
-| Medium Current | 120kV | 20A | 2.4MW | 20mΩ | ![Medium Current Cable](/cables/mediumcurrentcable.png) |
-| High Current | 120kV | 100A | 12MW | 20mΩ | ![High Current Cable](/cables/highcurrentcable.png)|
-| Creative | 51.2kV | 15kA | 768MW | <0mΩ | ![Creative Cable](/cables/creativecable.png) |
+| Low Voltage | 50V | 20A | 1kW | 25mΩ | <img src="/cables/lowvoltagecable.png" class="pixelated" /> |
+| Medium Voltage | 200V | 10A | 2kW | 100mΩ | <img src="/cables/mediumvoltagecable.png" class="pixelated" /> |
+| High Voltage | 800V | 6.25A | 5kW | 200mΩ | <img src="/cables/highvoltagecable.png" class="pixelated" /> |
+| Extreme Voltage | 3200V | 4.69A | 15kW | 133mΩ | <img src="/cables/veryhighvoltagecable.png" class="pixelated" /> |
+| Low Current | 120kV | 5A | 600kW | 20mΩ | <img src="/cables/lowcurrentcable.png" class="pixelated" /> |
+| Medium Current | 120kV | 20A | 2.4MW | 20mΩ | <img src="/cables/mediumcurrentcable.png" class="pixelated" /> |
+| High Current | 120kV | 100A | 12MW | 20mΩ | <img src="/cables/highcurrentcable.png" class="pixelated" /> |
+| Creative | 51.2kV | 15kA | 768MW | <0mΩ | <img src="/cables/creativecable.png" class="pixelated" /> |
 
 Each tier has their corresponding relays, switches and fuses
 
