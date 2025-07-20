@@ -145,3 +145,8 @@ img {
   border-radius: 12px;
   width: 100%;
 }
+
+.pixelated-images img {
+  image-rendering: pixelated;
+  width: 100%;
+}

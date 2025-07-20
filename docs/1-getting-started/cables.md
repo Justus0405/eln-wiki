@@ -1,3 +1,8 @@
+<script setup>
+import { usePixelatedImages } from '../.vitepress/theme/usePixelatedImages'
+usePixelatedImages()
+</script>
+
 # Cables
 
 > [!TIP]
