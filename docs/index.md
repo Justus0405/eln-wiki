@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: /1-getting-started/cables.md
+      link: /1-beginner/cables.md
     - theme: alt
       text: Contribute
       link: https://github.com/age-series/ElectricalAge

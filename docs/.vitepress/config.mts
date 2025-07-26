@@ -17,7 +17,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting started', link: '/1-getting-started/cables.md' },
+      { text: 'Getting started', link: '/1-beginner/cables.md' },
       { text: 'Team', link: '/team.md' },
       {
         text: "Download",
@@ -31,14 +31,14 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Beginner',
         items: [
-          { text: 'Cables', link: '/1-getting-started/cables.md' },
-          { text: 'Signal Cables', link: '/1-getting-started/signal-cables.md' },
-          { text: 'Transformers', link: '/1-getting-started/transformers.md' },
-          { text: 'Switches & Relays', link: '/1-getting-started/switches-and-relays.md' },
-          { text: 'Fuses', link: '/1-getting-started/fuses.md' },
-          { text: 'Tips & Tricks', link: '/1-getting-started/tips-and-tricks.md' },
+          { text: 'Cables', link: '/1-beginner/cables.md' },
+          { text: 'Signaling', link: '/1-beginner/signaling.md' },
+          { text: 'Transformers', link: '/1-beginner/transformers.md' },
+          { text: 'Switches & Relays', link: '/1-beginner/switches-and-relays.md' },
+          { text: 'Protection', link: '/1-beginner/protection.md' },
+          { text: 'Tips & Tricks', link: '/1-beginner/tips-and-tricks.md' },
         ]
       },
       {
