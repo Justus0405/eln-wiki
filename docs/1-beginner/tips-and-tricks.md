@@ -1,6 +1,7 @@
 # Tips and Tricks
 
-Helpful tips for new players.
+> [!INFO]
+> Helpful tips for new players.
 
 # Orientation
 

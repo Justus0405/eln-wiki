@@ -1,7 +1,8 @@
 # Transformers
 
-Transformers, also known as DC-DC Converters, can either step up or step down voltage statically.
-The green side is the input and the yellow side is the output, though the inputs are not restricted to a fixed side.
+> [!INFO]
+> Transformers, also known as DC-DC Converters, can either step up or step down voltage statically.
+> The green side is the input and the yellow side is the output, though the inputs are not restricted to a fixed side.
 
 | Type  | Image                                                               |
 | ----- | ------------------------------------------------------------------- |

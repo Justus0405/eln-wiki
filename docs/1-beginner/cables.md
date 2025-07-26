@@ -1,6 +1,6 @@
 # Cables
 
-> [!TIP]
+> [!INFO]
 > This wiki is exclusively for the
 > [jrddunbr](https://github.com/age-series/ElectricalAge) fork of electrical age
 
