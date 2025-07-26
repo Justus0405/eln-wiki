@@ -1,3 +1,3 @@
 # Signaling
 
-Signal cables are for transporting control signals for probes, relays and generators, the signal cable has a maximum voltage of 5V.
+Signal cables are for transporting control signals **from** probes, buttons, switches and trimmers **for** relays, generators, logic gates and signal processors. The signals have a voltage range of 0V to 5V.

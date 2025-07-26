@@ -32,6 +32,8 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Beginner',
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: 'Cables', link: '/1-beginner/cables.md' },
           { text: 'Signaling', link: '/1-beginner/signaling.md' },
@@ -43,6 +45,8 @@ export default defineConfig({
       },
       {
         text: 'Generators',
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: '50V Wind Turbine', link: '' },
           { text: '50V Water Turbine', link: '' },
@@ -52,6 +56,8 @@ export default defineConfig({
       },
       {
         text: 'Machines',
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: 'Auto Miner', link: '' },
           { text: 'Transportation Machine', link: '' },
@@ -59,6 +65,8 @@ export default defineConfig({
       },
       {
         text: 'Tools',
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: 'Flashlight', link: '' },
           { text: 'Ore Scanner', link: '' },
@@ -66,6 +74,8 @@ export default defineConfig({
       },
       {
         text: 'Advanced',
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: 'Logic Gates', link: '' },
           { text: 'Signal Processor', link: '' },
