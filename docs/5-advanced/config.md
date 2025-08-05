@@ -1,0 +1,233 @@
+# Eln.cfg
+
+> [!INFO]
+> The Eln default config options
+> and their use.
+
+## Power Balancing
+
+```ini
+balancing {
+    # Watts to EU
+    D:ElnToIndustrialCraftConversionRatio=0.3333333333333333
+
+    # Watts to OC Power
+    D:ElnToOpenComputerConversionRatio=0.13333333333333333
+
+    # Watts to RF
+    D:ElnToThermalExpansionConversionRatio=1.3333333333333333
+
+    # Maximum horizontal distance from autominer that will be mined
+    I:autominerRange=10
+    I:batteryCapacityFactor=1
+
+    # Multiplication factor for cable power capacity. We recommend 2.0 to 4.0 for larger modpacks, but 1.0 for Eln standalone, or if you like a challenge.
+    D:cablePowerFactor=1.0
+
+    # How heavy is *your* flywheel?
+    D:flywheelMass=50.0
+    I:fuelGeneratorPowerFactor=1
+    D:fuelHeatFurnacePowerFactor=1.0
+
+    # Factor to apply when converting real word heat values to Minecraft heat values (1mB = 1l).
+    D:fuelHeatValueFactor=6.75E-5
+    I:heatTurbinePowerFactor=1
+
+    # Plates made per ingot
+    I:platesPerIngot=1
+    D:shaftEnergyFactor=0.05
+    I:solarPanelPowerFactor=1
+
+    # Display more detailed WAILA info on some machines (good for creative mode)
+    B:wailaEasyMode=false
+    I:waterTurbinePowerFactor=1
+    I:windTurbinePowerFactor=1
+}
+```
+
+## Battery Life
+
+```ini
+battery {
+    # How many days it takes for a battery to decay half way
+    I:batteryHalfLife=2
+}
+```
+
+## Mod Compatibility
+
+```ini
+compatibility {
+    # Enable the OC/CC <-> Eln Computer Probe
+    B:ComputerProbeEnable=true
+
+    # Enable the Eln Energy Exporter
+    B:ElnToOtherEnergyConverterEnable=true
+}
+```
+
+## Debug
+
+```ini
+debug {
+    # Enables debug printing spam
+    B:enable=false
+
+    # Set this lower if you have clipping sounds in spaces with many sound sources (generators)
+    D:maxSoundDistance=16.0
+
+    # Change the number of sound channels. Set to -1 to use default
+    I:soundChannels=200
+
+    # Watchdog Impl. check
+    B:watchdog=false
+}
+```
+
+## Ore Dictionary
+
+```ini
+dictionary {
+    B:chips=true
+    B:tungsten=false
+}
+```
+
+## Entities
+
+```ini
+entity {
+    B:killMonstersAroundLamps=true
+    I:killMonstersAroundLampsRange=9
+    I:maxReplicators=100
+    I:replicatorId=-1
+
+    # Enable the replicator mob
+    B:replicatorPop=false
+    D:replicatorPopWhenThunderPerSecond=0.008333333333333333
+}
+```
+
+## Fuelgenerator
+
+```ini
+fuelgenerator {
+    I:tankCapacityInSecondsAtNominalPower=1200
+}
+```
+
+## Cable Explosions
+
+```ini
+gameplay {
+    # Make explosions a bit bigger
+    B:explosion=false
+}
+```
+
+## General
+
+```ini
+general {
+    # Enable Analytics for Electrical Age
+    B:analyticsEnable=true
+
+    # Opt into sending player UUID when sending analytics
+    B:analyticsPlayerOptIn=false
+
+    # Set update checker URL
+    S:analyticsURL=http://eln.ja13.org/stat
+
+    # Enables direct air to ground poles
+    B:directPoles=true
+
+    # Set this to false to enable grinch mode
+    B:enableFestiveItems=true
+
+    # Show the item instead of the electrical symbol as an icon
+    B:noSymbols=false
+
+    # Disable colored background to items
+    B:noVoltageBackground=false
+    S:playerUUID=
+
+    # Enable version checker
+    B:versionCheckEnable=true
+
+    # Set this to true to craft with vertical ingots instead of horizontal ones
+    B:verticalIronCableCrafting=false
+}
+```
+
+## Lamp durability
+
+```ini
+lamp {
+    D:carbonLifeInHours=6.0
+    D:economicLifeInHours=64.0
+    D:incandescentLifeInHours=16.0
+    B:infiniteLedLife=false
+    D:ledLifeInHours=512.0
+    B:swingingLamps=true
+}
+```
+
+## World Generation
+
+```ini
+mapgenerate {
+    B:cinnabar=true
+    B:copper=true
+    B:forceOreRegen=false
+    B:lead=true
+    B:tungsten=true
+}
+```
+
+## Modbus
+
+```ini
+modbus {
+    # Enable Modbus RTU
+    B:enable=false
+
+    # TCP Port for Modbus RTU
+    I:port=1502
+}
+```
+
+## Simulation
+
+```ini
+simulation {
+    # Set to a clean divisor of 20
+    I:electricalFrequency=20
+
+    # You don't want to set this lower than 50.
+    I:electricalInterSystemOverSampling=50
+
+    # I wouldn't touch this one either
+    I:thermalFrequency=400
+}
+```
+
+## Wireless Range
+
+```ini
+wireless {
+    # Maximum range for wireless transmitters to be recieved, as well as lamp supplies
+    I:txRange=32
+}
+```
+
+## Xray Scanner
+
+```ini
+xrayscannerconfig {
+    B:addOtherModOreToXRay=true
+    B:canBeCrafted=true
+
+    # X-Ray Scanner range; set between 4 and 10 blocks
+    D:rangeInBloc=5.0
+}
+```

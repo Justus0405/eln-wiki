@@ -82,7 +82,7 @@ export default defineConfig({
           { text: 'Signal Processor', link: '' },
           { text: 'Variable Transformers', link: '' },
           { text: 'Computer Probe', link: '/5-advanced/computer-probe.md' },
-          { text: 'Config', link: '' },
+          { text: 'Config', link: '/5-advanced/config.md' },
         ]
       },
     ],
