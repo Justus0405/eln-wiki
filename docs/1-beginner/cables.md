@@ -19,7 +19,7 @@ ELN comes with different voltage tiers which are also color coded.
 | High Current    | 120kV   | 100A   | 12MW  | 20mΩ              | <img src="/cables/highcurrentcable.png" class="pixelated" />     |
 | Creative        | 51.2kV  | 15kA   | 768MW | <0mΩ              | <img src="/cables/creativecable.png" class="pixelated" />        |
 
-Each tier has their corresponding relays, switches and fuses.
+Each tier has their corresponding [relays, switches](/1-beginner/switches-and-relays.md) and [fuses](/1-beginner/protection.html#electrical-fuse).
 
 ## Integrity
 
@@ -32,6 +32,6 @@ As electricity travels over long distances, some voltage is lost due to resistan
 
 ## Config
 
-The voltage, ampere and power for each tier can be changed with a multiplier in the config.
+The voltage, ampere and power for each tier can be changed with a multiplier in the [config](/5-advanced/config.html#power-balancing).
 
 By default electrical componens just break and drop, however for someone seeking a challange it can also be set to [explode](/5-advanced/config.html#cable-explosions) and destroy blocks upon breaking.

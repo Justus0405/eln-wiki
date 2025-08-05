@@ -94,7 +94,7 @@ export default defineConfig({
         items: [
           { text: 'Logic Gates', link: '' },
           { text: 'Signal Processor', link: '' },
-          { text: 'Variable Transformers', link: '' },
+          { text: 'Variable Transformers', link: '/5-advanced/variable-transformers.md' },
           { text: 'Computer Probe', link: '/5-advanced/computer-probe.md' },
           { text: 'Config', link: '/5-advanced/config.md' },
         ]
