@@ -10,6 +10,20 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/eln-wiki/main/elnlogocube.png" }]
   ],
+  // EXAMPLE
+  // TODO: Add more languages
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en',
+      link: '/'
+    },
+    fr: {
+      label: 'German',
+      lang: 'de', // optional, will be added  as `lang` attribute on `html` tag
+      link: '/de/' // default /de/ -- shows on navbar translations menu, can be external
+    }
+  },
 
   themeConfig: {
     logo: "/main/elnlogocube.png",

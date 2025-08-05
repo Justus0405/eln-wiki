@@ -2,7 +2,7 @@
 
 > [!INFO]
 > There are different ways to protect your circuits from too much voltage or too much current.
-> You can use [probes](/1-beginner/signaling.md) with [relays](/1-beginner/switches-and-relays.md) or special blocks like these.
+> You can use automated methods with [probes](/1-beginner/signaling.md) and [relays](/1-beginner/switches-and-relays.md) or manual methods with special blocks like these.
 
 ## Electrical Breaker
 
