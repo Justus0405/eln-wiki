@@ -1,5 +1,8 @@
 # eln-wiki
 
+Link:
+https://justus0405.github.io/eln-wiki/
+
 ## Build yourself:
 ```sh
 git clone https://github.com/Justus0405/eln-wiki.git
