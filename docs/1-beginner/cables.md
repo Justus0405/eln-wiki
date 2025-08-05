@@ -4,6 +4,8 @@
 > This wiki is exclusively for the
 > [jrddunbr](https://github.com/age-series/ElectricalAge) fork of electrical age
 
+## Cable Tiers
+
 ELN comes with different voltage tiers which are also color coded.
 
 | Tier            | Voltage | Ampere | Power | Serial Resistance | Image                                                            |
@@ -32,4 +34,4 @@ As electricity travels over long distances, some voltage is lost due to resistan
 
 The voltage, ampere and power for each tier can be changed with a multiplier in the config.
 
-By default electrical componens just break and drop, however for someone seeking a challange it can also be set to explode and destroy blocks upon breaking.
+By default electrical componens just break and drop, however for someone seeking a challange it can also be set to [explode](/5-advanced/config.html#cable-explosions) and destroy blocks upon breaking.

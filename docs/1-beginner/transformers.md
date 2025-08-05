@@ -9,6 +9,8 @@
 | Item  | <img src="/transformers/dc-dcconverter.png" class="pixelated" />    |
 | Block | <img src="/transformers/dc-dcconverter-ni.png" class="pixelated" /> |
 
+## How to use
+
 To adjust the voltage, open the inventory of the transformer. You will see four slots:
 
 - **Middle Slot**: For a ferromagnetic core, which comes in three variants, each has a different efficiency rating that affects voltage loss:

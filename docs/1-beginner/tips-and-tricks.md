@@ -3,7 +3,7 @@
 > [!INFO]
 > Helpful tips for new players.
 
-## Orientation
+## Block Orientation
 
 You can rotate ELN blocks by holding the wrench key (C by default) and right-clicking the block.
 
