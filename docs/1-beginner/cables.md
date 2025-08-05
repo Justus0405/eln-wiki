@@ -19,16 +19,16 @@ ELN comes with different voltage tiers which are also color coded.
 
 Each tier has their corresponding relays, switches and fuses.
 
-# Integrity
+## Integrity
 
 Cables which carry more load than designed heat up and at ~180°C start to break.
 [Switches and relays](/1-beginner/switches-and-relays.md) however dont have a internal temperature and only get destroyed when supplied to much voltage.
 
-# Resistance
+## Resistance
 
 As electricity travels over long distances, some voltage is lost due to resistance in the cables. To minimize these losses, the voltage can be increased using a [transformer](/1-beginner/transformers.md) before transmission.
 
-# Config
+## Config
 
 The voltage, ampere and power for each tier can be changed with a multiplier in the config.
 

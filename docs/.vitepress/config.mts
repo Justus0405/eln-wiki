@@ -41,6 +41,7 @@ export default defineConfig({
           { text: 'Switches & Relays', link: '/1-beginner/switches-and-relays.md' },
           { text: 'Protection', link: '/1-beginner/protection.md' },
           { text: 'Tips & Tricks', link: '/1-beginner/tips-and-tricks.md' },
+          { text: 'Common Issues', link: '/1-beginner/common-issues.md' },
         ]
       },
       {
@@ -80,6 +81,7 @@ export default defineConfig({
           { text: 'Logic Gates', link: '' },
           { text: 'Signal Processor', link: '' },
           { text: 'Variable Transformers', link: '' },
+          { text: 'Computer Probe', link: '/5-advanced/computer-probe.md' },
           { text: 'Config', link: '' },
         ]
       },

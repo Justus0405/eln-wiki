@@ -24,7 +24,7 @@ To adjust the voltage, open the inventory of the transformer. You will see four 
   - There must be **at least one cable in each slot** for the transformer to function.
   - If you put the **same amount** of cable in each slot there is not difference and the voltage stays the same.
 
-# Example
+## Example
 
 <img src="/transformers/dc-dcconverter-inv.png" class="rounded" /><br>
 
@@ -34,7 +34,7 @@ You would place **1 copper cable** in Slot 1 and **4 copper cables** in Slot 3, 
 > [!TIP] Formular
 > 200 ÷ 50 = 4
 
-# Customization
+## Customization
 
 **Slot 4** allows you to add a case to the transformer to hide its internal components.
 

@@ -4,7 +4,7 @@
 > There are different ways to protect your circuits from too much voltage or too much current.
 > You can use [probes](/1-beginner/signaling.md) with [relays](/1-beginner/switches-and-relays.md) or special blocks like these.
 
-# Electrical Breaker
+## Electrical Breaker
 
 The electrical breaker stops too much voltage or too little voltage.
 You need to put a cable (any voltage) into the breaker. Then, you can connect other cables to the top and bottom.
@@ -20,7 +20,7 @@ If the breaker pops, it needs to be turned on manually again.
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------------------------- |
 | <img src="/protection/breaker-opened.png" class="rounded" /> | <img src="/protection/breaker-closed.png" class="rounded" /> | <img src="/protection/breaker-inv.png" /> |
 
-# Electrical Fuse
+## Electrical Fuse
 
 The electrical fuse stops too much current.
 There are 4 types of fuses: low, medium, high, and very high voltage.
