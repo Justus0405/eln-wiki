@@ -85,7 +85,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Flashlight', link: '/4-tools/flashlight.md' },
-          { text: 'Ore Scanner', link: '' },
+          { text: 'X-Ray Scanner', link: '/4-tools/x-ray-scanner.md' },
         ]
       },
       {
