@@ -74,6 +74,7 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
+          { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
           { text: 'Auto Miner', link: '' },
           { text: 'Transportation Machine', link: '' },
         ]
@@ -83,7 +84,7 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
-          { text: 'Flashlight', link: '' },
+          { text: 'Flashlight', link: '/4-tools/flashlight.md' },
           { text: 'Ore Scanner', link: '' },
         ]
       },
