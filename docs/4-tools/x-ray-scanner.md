@@ -5,7 +5,7 @@
 
 ## Usage
 
-You need to charge the item in a battery charger. After it is charged, you can turn it on or off by right clicking.
+You need to charge the item in a [battery charger](/3-machines/battery-charger.md). After it is charged, you can turn it on or off by right clicking.
 
 ## Example
 

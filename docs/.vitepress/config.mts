@@ -84,6 +84,7 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
+          { text: 'Paint Brush', link: '/4-tools/paint-brush.md' },
           { text: 'Flashlight', link: '/4-tools/flashlight.md' },
           { text: 'X-Ray Scanner', link: '/4-tools/x-ray-scanner.md' },
         ]
