@@ -75,7 +75,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
-          { text: 'Auto Miner', link: '' },
+          { text: 'Auto Miner', link: '/3-machines/auto-miner.md' },
           { text: 'Experimental Transporter', link: '/3-machines/experimental-transporter.md' },
         ]
       },
