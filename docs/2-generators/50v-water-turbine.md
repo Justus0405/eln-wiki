@@ -11,7 +11,7 @@ The Water Turbine produces up to 30W at around 50V. It is **the** easiest ways t
 
 ## Connection
 
-The Water Turbine has one connector for low-voltage cables at the back. If you need a higher voltage, use a [transformer](1-beginner/transformers.md).
+The Water Turbine has one connector for low-voltage cables at the back. If you need a higher voltage, use a [transformer](/1-beginner/transformers.md).
 
 ## Positioning
 

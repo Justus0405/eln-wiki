@@ -12,7 +12,7 @@ The Wind Turbine produces up to 160W at around 50V, depending on wind strength. 
 
 ## Connection
 
-The Wind Turbine has one connector for low voltage cables at the back. If you need a higher voltage, use a [transformer](1-beginner/transformers.md).
+The Wind Turbine has one connector for low voltage cables at the back. If you need a higher voltage, use a [transformer](/1-beginner/transformers.md).
 
 ## Positioning
 
