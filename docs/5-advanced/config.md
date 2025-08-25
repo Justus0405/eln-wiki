@@ -220,7 +220,7 @@ wireless {
 }
 ```
 
-## Xray Scanner
+## X-Ray Scanner
 
 ```ini
 xrayscannerconfig {

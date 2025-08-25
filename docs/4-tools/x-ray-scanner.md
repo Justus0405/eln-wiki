@@ -15,4 +15,4 @@ You need to charge the item in a [battery charger](/3-machines/battery-charger.m
 
 ## Config
 
-You can choose which ores are visible and how far you can see in the [config](/5-advanced/config.html#xray-scanner).
+You can configure range and which ores are visible in the [config](/5-advanced/config.html#xray-scanner).

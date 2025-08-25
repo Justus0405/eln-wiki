@@ -63,8 +63,8 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
-          { text: '50V Wind Turbine', link: '' },
-          { text: '50V Water Turbine', link: '' },
+          { text: '50V Wind Turbine', link: '/2-generators/50v-wind-turbine.md' },
+          { text: '50V Water Turbine', link: '/2-generators/50v-water-turbine.md' },
           { text: '50V - 200V Turbine', link: '' },
           { text: '50V - 200V Solar', link: '' },
         ]
@@ -76,7 +76,7 @@ export default defineConfig({
         items: [
           { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
           { text: 'Auto Miner', link: '' },
-          { text: 'Transportation Machine', link: '' },
+          { text: 'Experimental Transporter', link: '/3-machines/experimental-transporter.md' },
         ]
       },
       {
