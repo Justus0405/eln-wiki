@@ -1,98 +1,138 @@
 # Eln Computer Probe
 
 > [!INFO]
-> The Eln Computer Probe is a block which allows a computer to read and manipulate signals passing through it,
-> as well as wireless signals within range.
+> The Eln Computer Probe is a block that lets a computer read and control signals passing through it, including wireless signals within range.
 
 ## Functions
 
-The functions it provides do not contain an internal API, so they will be defined here:
+The probe does not have an internal API. Its functions are listed below:
 
-- signalSetDir("side","in" or "out") - Sets the direction a signal flows on the specified side. Both arguments must be strings, and are case-sensitive. Always returns nil. This can be used to set a value before actually applying it to your ELN network, or to deactivate it without losing its value. This also means one cannot read and write a voltage value at the same time. Switch the modes on each port as needed or dedicate different ports for reading and writing.
-- signalGetDir("side") - Used to determine if the specified side is in "in" or "out" mode.
-- signalGetIn("side") - Gets the signal strength as a percentage. Multiply by 50 to get exact voltage value.
-- signalSetOut() - If the side is set to "out" use this function to set the signal's strength as a percentage. If the side is set to "in" the voltage won't change until it is set to "out". Divide by 50 to use the exact voltage value.
-- wirelessGet("channel name") - Gets the wireless signal strength as a percentage, uses channel name rather than side.
-- wirelessSet("channel name",number) - Sets the signal strength of the specified channel name. Uses the same percentage value. Divide by 50 to use exact voltage value.
-- wirelessRemove("channel name") - Removes a wireless channel from the block by name.
-- wirelessRemoveAll() - Clears the wireless channels within the block. This is used to disable all wireless interactions in a single command.
+- `signalSetDir("side","in" or "out")`
+  Sets the direction a signal flows on the chosen side. Both arguments must be strings and are case sensitive. Always returns nil. This lets you set or disable a value without losing it. You cannot read and write voltage on the same port at once. Switch modes as needed or dedicate ports for input and output.
+
+- `signalGetDir("side")`
+  Tells you if the chosen side is in "in" or "out" mode.
+
+- `signalGetIn("side")`
+  Reads the signal strength as a percentage. Multiply by 5 to get the voltage in volts.
+
+- `signalSetOut("side", number)`
+  If the side is set to "out" you can set the signal strength as a percentage. If it is set to "in" the voltage will not change until switched to "out". Divide by 5 to set the exact voltage.
+
+- `wirelessGet("channel name")`
+  Gets the wireless signal strength as a percentage, using the channel name instead of a side.
+
+- `wirelessSet("channel name", number)`
+  Sets the wireless signal strength for the chosen channel. Uses the same percentage system. Divide by 5 to set the exact voltage.
+
+- `wirelessRemove("channel name")`
+  Removes the chosen wireless channel.
+
+- `wirelessRemoveAll()`
+  Clears all wireless channels in the block. This stops all wireless interaction with one command.
 
 ## Directions
 
-When a probe is placed, 6 sides will appear printed on the sides of the block. These always face the same way, no matter which direction you place the block in. These are used to control the previous functions, usually to specify which side to operate the function on. Its naming structure is a reference to transistors, where P-type is considered positive and N-type is considered negative. The x and y refers to the co-ordinate value.
+When you place a probe, six sides are labeled on the block. These labels do not change no matter how you place it. They are used in functions to pick which side to use. The naming follows transistor conventions, with P-type as positive and N-type as negative. The letters x, y, and z mark the axis.
 
-- XN - Faces West
-- XP - Faces East
-- YN - Faces Ground
-- YP - Faces Skyward
-- ZN - Faces North
-- ZP - Faces South
+- XN faces West
+- XP faces East
+- YN faces Down
+- YP faces Up
+- ZN faces North
+- ZP faces South
 
 ## Sample Code
 
-These are some ideas for how you can use these functions. At the bottom of this section there is a listing that combines all of this content into one file.
+Here are some ways to use the probe. At the end you will see a full working script.
 
-## Configuring I/O
+### Configuring I/O
 
-This configures a side of the Computer Probe (there are 6 independently configurable sides) for input or output
+Each of the 6 sides can be set for input or output.
 
 ```lua
-probe.signalSetDir("ZP","out") --The South end is now emitting voltage
-probe.signalSetDir("ZN","in") --The North end is now reading voltage
+-- South side outputs voltage
+probe.signalSetDir("ZP","out")
+-- North side reads voltage
+probe.signalSetDir("ZN","in")
 ```
 
-## Reading voltages
+### Reading voltage
 
-This reads a probe side set for input.
-
-The signalGetIn() method takes the side and returns a floating point number between 0 and 1, which correlates the range 0 to 50 volts.
+`signalGetIn()` returns a number from 0 to 1. Multiply by 5 to convert it to volts.
 
 ```lua
-local voltage = probe.signalGetIn("ZN") * 50 -- Reads the North end as a voltage value
-local output = voltage / 2 --The output is now half the value of the input
+-- North side voltage
+local voltage = probe.signalGetIn("ZN") * 5
+-- Half of the input value
+local output = voltage / 2
 ```
 
-## Writing voltages
+### Writing voltage
 
-This writes a probe side output voltage.
-
-The signalSetOut() method takes the side and the output (a number between 0 and 1 inclusive is accepted) and returns (probably) nothing.
-
-Said number between 0 and 1 correlates to a voltage between 0 and 50 volts.
+`signalSetOut()` takes a side and a number between 0 and 1. This represents 0 to 5 volts.
 
 ```lua
-probe.signalSetOut("ZP",output/50) --Now the South end is emitting half the value of the North end
+-- South side outputs half the North side value
+probe.signalSetOut("ZP", output/5)
 ```
 
-## Final Listing
+### Full example
 
-You can type this code into a .lua file (use the edit command to write files) and it will run once and work as expected. If you wanted to halve the voltage constantly, you would need a loop of some kind.
+You can save this in a `.lua` file using the edit command. It will run once. To keep halving the voltage, you would need to add a loop.
 
 ```lua
+-- Load the component library and get the probe object
 local component = require("component")
 local probe = component.ElnProbe
-probe.signalSetDir("ZP","out") --The South end is now emitting voltage
-probe.signalSetDir("ZN","in") --The North end is now reading voltage
-local voltage = probe.signalGetIn("ZN") * 50 -- Reads the North end as a voltage value
-local output = voltage / 2 --The output is now half the value of the input
-probe.signalSetOut("ZP",output/50) --Now the South end is emitting half the value of the North end
+
+-- Configure the probe sides
+-- Set the South side (ZP) to output voltage
+probe.signalSetDir("ZP", "out")
+-- Set the North side (ZN) to input voltage
+probe.signalSetDir("ZN", "in")
+
+-- Read the voltage from the North side
+-- signalGetIn() returns a value between 0 and 1
+-- Multiply by 5 to convert it to volts
+local voltage = probe.signalGetIn("ZN") * 5
+
+-- Process the voltage
+-- Here we just take half of the input voltage
+local output = voltage / 2
+
+-- Write the processed voltage to the South side
+-- signalSetOut() expects a value between 0 and 1
+-- Divide by 5 to convert volts back to the 0-1 range
+probe.signalSetOut("ZP", output / 5)
+
 ```
 
 ## ComputerCraft
 
-The above code works in ComputerCraft, you just need to change how you create the probe proxy:
+In ComputerCraft the code is the same, except the probe proxy is created differently.
 
 ```lua
 local probe = peripheral.find("ElnProbe")
 ```
 
-So, you would get this:
+So the full script looks like this:
 
 ```lua
+-- Find the probe peripheral
 local probe = peripheral.find("ElnProbe")
-probe.signalSetDir("ZP","out") --The South end is now emitting voltage
-probe.signalSetDir("ZN","in") --The North end is now reading voltage
-local voltage = probe.signalGetIn("ZN") * 50 -- Reads the North end as a voltage value
-local output = voltage / 2 --The output is now half the value of the input
-probe.signalSetOut("ZP",output/50) --Now the South end is emitting half the value of the North end
+
+-- Configure sides
+probe.signalSetDir("ZP", "out")
+probe.signalSetDir("ZN", "in")
+
+-- Read voltage from North side
+local voltage = probe.signalGetIn("ZN") * 5
+
+-- Process the voltage
+local output = voltage / 2
+
+-- Output processed voltage to South side
+probe.signalSetOut("ZP", output / 5)
+
 ```
