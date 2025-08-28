@@ -74,9 +74,15 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
-          { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
           { text: 'Auto Miner', link: '/3-machines/auto-miner.md' },
+          { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
+          { text: 'Egg Incubator', link: '/3-machines/egg-incubator.md' },
           { text: 'Experimental Transporter', link: '/3-machines/experimental-transporter.md' },
+          { text: 'Macerator', link: '/3-machines/macerator.md' },
+          { text: 'Plate Machine', link: '/3-machines/plate-machine.md' },
+          { text: 'Compressor', link: '/3-machines/compressor.md' },
+          { text: 'Magnetizer', link: '/3-machines/magnetizer.md' },
+          { text: 'Machine Booster', link: '/3-machines/machine-booster.md' },
         ]
       },
       {
