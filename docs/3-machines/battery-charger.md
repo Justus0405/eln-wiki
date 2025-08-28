@@ -22,7 +22,7 @@ You can take items out by opening the charger’s inventory.
 
 ## Upgrades
 
-You can make the battery charger charge faster by placing up to five machine upgrades in the upgrade slot.
+You can add a [Machine Booster](/3-machines/machine-booster.md) to make the machine faster, but this increases power use.
 
 ## Supported Items
 

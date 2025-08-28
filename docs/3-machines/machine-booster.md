@@ -8,6 +8,8 @@
 The Machine Booster can be installed in certain machines to make them work faster.
 The following machines accept the Machine Booster:
 
+- 50V [Battery Charger](/3-machines/battery-charger.md)
+- 200V [Battery Charger](/3-machines/battery-charger.md)
 - 50V [Macerator](/3-machines/macerator.md)
 - 200V [Macerator](/3-machines/macerator.md)
 - 50V [Plate Machine](/3-machines/plate-machine.md)

@@ -75,9 +75,9 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Auto Miner', link: '/3-machines/auto-miner.md' },
-          { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
-          { text: 'Egg Incubator', link: '/3-machines/egg-incubator.md' },
           { text: 'Experimental Transporter', link: '/3-machines/experimental-transporter.md' },
+          { text: 'Egg Incubator', link: '/3-machines/egg-incubator.md' },
+          { text: 'Battery Charger', link: '/3-machines/battery-charger.md' },
           { text: 'Macerator', link: '/3-machines/macerator.md' },
           { text: 'Plate Machine', link: '/3-machines/plate-machine.md' },
           { text: 'Compressor', link: '/3-machines/compressor.md' },
@@ -100,8 +100,8 @@ export default defineConfig({
         collapsible: true,
         collapsed: false,
         items: [
-          { text: 'Logic Gates', link: '' },
-          { text: 'Signal Processor', link: '' },
+          { text: 'Logic Gates', link: '/5-advanced/logic-gates.md' },
+          { text: 'Signal Processor', link: '/5-advanced/signal-processor.md' },
           { text: 'Variable Transformers', link: '/5-advanced/variable-transformers.md' },
           { text: 'Computer Probe', link: '/5-advanced/computer-probe.md' },
           { text: 'Config', link: '/5-advanced/config.md' },
