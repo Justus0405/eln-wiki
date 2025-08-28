@@ -27,83 +27,35 @@ Each machine can use up to 5 Machine Boosters.
 The values below show the power usage of machines with different numbers of Machine Boosters.
 Tests were done using a single machine connected to an electrical source set to its rated voltage, with a cable of the same voltage class. Your results may vary slightly. All numbers are rounded.
 
-### 50V Macerator
+### Low Voltage
 
-- No Boosters: 3.95 A, 200 W
-- One Booster: 5.45 A, 275 W
-- Two Boosters: 7.45 A, 370 W
-- Three Boosters: 10.0 A, 505 W
-- Four Boosters: 14.0 A, 690 W
-- Five Boosters: 19.0 A, 930 W
+| Voltage | Boosters | Macerator    | Plate Machine | Compressor   | Magnetizer   |
+| ------- | -------- | ------------ | ------------- | ------------ | ------------ |
+| 50V     | 0        | 3.95A / 200W | 3.95A / 200W  | 3.95A / 200W | 3.95A / 200W |
+| 50V     | 1        | 5.45A / 275W | 5.45A / 270W  | 5.45A / 270W | 5.45A / 270W |
+| 50V     | 2        | 7.45A / 370W | 7.75A / 370W  | 7.75A / 370W | 7.75A / 370W |
+| 50V     | 3        | 10.0A / 505W | 10.0A / 505W  | 10.0A / 505W | 10.0A / 505W |
+| 50V     | 4        | 14.0A / 690W | 14.0A / 690W  | 14.0A / 690W | 14.0A / 690W |
+| 50V     | 5        | 19.0A / 930W | 19.0A / 930W  | 19.0A / 930W | 19.0A / 930W |
 
-### 200V Macerator
+### Medium Voltage
 
-- No Boosters: 2.0 A, 400 W
-- One Booster: 2.75 A, 545 W
-- Two Boosters: 3.75 A, 750 W
-- Three Boosters: 5.15 A, 1000 W
-- Four Boosters: 7.05 A, 1400 W
-- Five Boosters: 9.65 A, 1900 W
+| Voltage | Boosters | Macerator     | Plate Machine | Compressor    | Magnetizer    |
+| ------- | -------- | ------------- | ------------- | ------------- | ------------- |
+| 200V    | 0        | 2.0A / 400W   | 2.0A / 400W   | 2.0A / 400W   | 2.0A / 400W   |
+| 200V    | 1        | 2.75A / 545W  | 2.75A / 545W  | 2.75A / 545W  | 2.75A / 545W  |
+| 200V    | 2        | 3.75A / 750W  | 3.75A / 750W  | 3.75A / 750W  | 3.75A / 750W  |
+| 200V    | 3        | 5.15A / 1000W | 5.15A / 1000W | 5.15A / 1000W | 5.15A / 1000W |
+| 200V    | 4        | 7.05A / 1400W | 7.05A / 1400W | 7.05A / 1400W | 7.05A / 1400W |
+| 200V    | 5        | 9.65A / 1900W | 9.65A / 1900W | 9.65A / 1900W | 9.65A / 1900W |
 
-### 50V Plate Machine
+### High Voltage
 
-- No Boosters: 3.95 A, 200 W
-- One Booster: 5.45 A, 270 W
-- Two Boosters: 7.75 A, 370 W
-- Three Boosters: 10.0 A, 505 W
-- Four Boosters: 14.0 A, 690 W
-- Five Boosters: 19.0 A, 930 W
-
-### 200V Plate Machine
-
-- No Boosters: 2.0 A, 400 W
-- One Booster: 2.75 A, 545 W
-- Two Boosters: 3.75 A, 750 W
-- Three Boosters: 5.15 A, 1000 W
-- Four Boosters: 7.05 A, 1400 W
-- Five Boosters: 9.65 A, 1900 W
-
-### 50V Compressor
-
-- No Boosters: 3.95 A, 200 W
-- One Booster: 5.45 A, 270 W
-- Two Boosters: 7.75 A, 370 W
-- Three Boosters: 10.0 A, 505 W
-- Four Boosters: 14.0 A, 690 W
-- Five Boosters: 19.0 A, 930 W
-
-### 200V Compressor
-
-- No Boosters: 2.0 A, 400 W
-- One Booster: 2.75 A, 545 W
-- Two Boosters: 3.75 A, 750 W
-- Three Boosters: 5.15 A, 1000 W
-- Four Boosters: 7.05 A, 1400 W
-- Five Boosters: 9.65 A, 1900 W
-
-### 50V Magnetizer
-
-- No Boosters: 3.95 A, 200 W
-- One Booster: 5.45 A, 270 W
-- Two Boosters: 7.75 A, 370 W
-- Three Boosters: 10.0 A, 505 W
-- Four Boosters: 14.0 A, 690 W
-- Five Boosters: 19.0 A, 930 W
-
-### 200V Magnetizer
-
-- No Boosters: 2.0 A, 400 W
-- One Booster: 2.75 A, 545 W
-- Two Boosters: 3.75 A, 750 W
-- Three Boosters: 5.15 A, 1000 W
-- Four Boosters: 7.05 A, 1400 W
-- Five Boosters: 9.65 A, 1900 W
-
-### 800V Arc Furnace
-
-- No Boosters: 12.5 A, 9800 W
-- One Booster: 17.0 A, 13500 W
-- Two Boosters: 23.5 A, 18800 W
-- Three Boosters: 32.5 A, 26000 W
-- Four Boosters: 44.5 A, 35000 W
-- Five Boosters: 61.0 A, 49000 W
+| Voltage | Boosters | Arc Furnace    |
+| ------- | -------- | -------------- |
+| 800V    | 0        | 12.5A / 9800W  |
+| 800V    | 1        | 17.0A / 13500W |
+| 800V    | 2        | 23.5A / 18800W |
+| 800V    | 3        | 32.5A / 26000W |
+| 800V    | 4        | 44.5A / 35000W |
+| 800V    | 5        | 61.0A / 49000W |

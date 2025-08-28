@@ -4,11 +4,6 @@
 > Transformers, also known as DC-DC Converters, can either step up or step down voltage statically.
 > The green side is the input and the yellow side is the output, though the inputs are not restricted to a fixed side.
 
-| Type  | Image                                                               |
-| ----- | ------------------------------------------------------------------- |
-| Item  | <img src="/transformers/dc-dcconverter.png" class="pixelated" />    |
-| Block | <img src="/transformers/dc-dcconverter-ni.png" class="pixelated" /> |
-
 ## How to use
 
 To adjust the voltage, open the inventory of the transformer. You will see four slots:
