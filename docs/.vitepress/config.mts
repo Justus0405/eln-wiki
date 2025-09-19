@@ -66,7 +66,7 @@ export default defineConfig({
           { text: '50V Wind Turbine', link: '/2-generators/50v-wind-turbine.md' },
           { text: '50V Water Turbine', link: '/2-generators/50v-water-turbine.md' },
           { text: '50V - 200V Turbine', link: '' },
-          { text: '50V - 200V Solar', link: '' },
+          { text: '50V - 200V Solar', link: '/2-generators/50v-200v-solar.md' },
         ]
       },
       {
